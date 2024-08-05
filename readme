@@ -1,0 +1,71 @@
+######################################
+Caesar Cipher Program Documentation
+######################################
+
+
+
+Overview
+The Caesar Cipher program encrypts and decrypts text using the Caesar Cipher algorithm. Users can input a message and a shift value to perform the encryption or decryption. The program supports uppercase and lowercase letters, while non-alphabetic characters remain unchanged.
+
+**********
+Functions
+**********
+caesar_cipher(text, shift, mode='encrypt')
+Encrypts or decrypts the input text using the Caesar Cipher algorithm.
+
+
+***********
+Parameters:
+***********
+
+text (str): The message to be encrypted or decrypted.
+shift (int): The number of positions each character in the text will be shifted.
+mode (str): Specifies whether to 'encrypt' or 'decrypt' the text. Defaults to 'encrypt'.
+Returns:
+
+result (str): The encrypted or decrypted message.
+Details:
+
+For encryption, characters in the text are shifted forward by the shift value.
+For decryption, characters are shifted backward by the shift value (negative shift).
+Uppercase and lowercase letters are shifted within their respective ranges.
+Non-alphabetic characters are left unchanged.
+main()
+Handles user interaction, allowing them to encrypt or decrypt messages.
+
+******
+Flow:
+******
+Greets the user and presents the option to encrypt or decrypt a message.
+Prompts the user to input the message and shift value.
+Calls the caesar_cipher function to perform the encryption or decryption.
+Displays the resulting message.
+Asks the user if they want to encrypt/decrypt another message and continues based on the response.
+Thanks the user and exits the program.
+
+******
+Usage
+******
+Run the program.
+Choose whether to encrypt (E) or decrypt (D) a message.
+Enter the message to be encrypted or decrypted.
+Enter the shift value.
+The program displays the encrypted or decrypted message.
+Optionally, choose to process another message or exit the program.
+
+
+************************
+Additional Information
+************************
+Encryption Example:
+
+Input: "ABC", Shift: 1
+Output: "BCD"
+Decryption Example:
+
+Input: "BCD", Shift: 1
+Output: "ABC"
+Non-Alphabetic Characters:
+
+Input: "Hello, World!", Shift: 3
+Output: "Khoor, Zruog!"
